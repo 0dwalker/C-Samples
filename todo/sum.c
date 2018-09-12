@@ -6,7 +6,11 @@
 *  The function accepts an integer pointer as input.
 */
 
-sum(){
+sum(int * a, int  *b){
+    for(p=0;p<numbers;p++){
+        number[p] = num;
+        sum=sum + num;
+    }
 
 }
 
