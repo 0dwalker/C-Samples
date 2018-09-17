@@ -6,12 +6,14 @@
 *  The function accepts an integer pointer as input.
 */
 
-sum(int * a, int  *b){
-    for(p=0;p<numbers;p++){
-        number[p] = num;
-        sum=sum + num;
+int sum(int * a, int b){
+    int num=0;
+    int p;
+    for(p=0;p<b;p++){
+        num=num + a[p];
+        //new = old + stuff
     }
-
+    return num;
 }
 
 
@@ -29,8 +31,7 @@ int main(){
     for(i=0;i<20;i++){
         numbers[i] = (i * i) - (4 * i);
     }
-
-    int total = sum(numbers);
+    int total = sum(numbers, 20);
 
 
     return total;
