@@ -53,10 +53,22 @@ struct RationalNum divide(struct RationalNum a, struct RationalNum b ){
 
 //function for adding rational numbers
 struct RationalNum reduce(struct RationalNum a){
-  if num > dom{
-      
-  } 
-    for(int a=0;a>10;a++){
-
+    int num = a.num;
+    int dom = a.dom;
+    for(int b=2;b<num;b++){
+        if (num%b == 0 && dom%b == 0){
+            num = num/b;
+            dom =dom/b; 
+        b--;
+        }
+        struct RationalNum c={num,dom,value }
+return c;
+        
     }
+}
+
+int main(){
+    struct RationalNum d={6,3,2}
+    struct RationalNum e=reduce(d);
+    printf("%i",e.num);
 }
